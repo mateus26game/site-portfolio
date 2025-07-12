@@ -17,8 +17,9 @@
 <h2 class="section-title">Cursos Complementares</h2>
 
 <div class="cursos-section">
-  <button class="carousel-btn left-btn" (click)="scrollLeft()">←</button>
-
+    <button class="carousel-btn left-btn" (click)="scrollLeft()" aria-label="Voltar">
+        ‹
+      </button>
   <div class="cursos-carousel" id="cursos-carousel" #cursosCarousel>
     <div class="curso-card" *ngFor="let curso of cursosUdemy">
       <a [href]="curso.link" target="_blank">
@@ -29,7 +30,10 @@
     </div>
   </div>
 
-  <button class="carousel-btn right-btn" (click)="scrollRight()">→</button>
+
+  <button class="carousel-btn right-btn" (click)="scrollRight()" aria-label="Avançar">
+    ›
+  </button>
 </div>
 
 <div class="proxima-secao">
