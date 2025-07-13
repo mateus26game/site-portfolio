@@ -1,0 +1,12 @@
+.section-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 15vh;     /* <-- espaço acima */
+    margin-bottom: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  

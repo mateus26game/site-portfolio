@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { Experiencia } from './component/experiencia/experiencia';
 import { Footer } from './component/footer/footer';
 import { FormacaoComponent } from './component/formacao/formacao';
+import { ListaDeTodosOsCursos } from './component/lista-de-todos-os-cursos/lista-de-todos-os-cursos';
+import { Home } from './component/home/home';
+import { ParticlesContact } from './component/particles-contact/particles-contact';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { FormacaoComponent } from './component/formacao/formacao';
     FaleComigoComponent,
     Experiencia,
     Footer,
-    FormacaoComponent
+    FormacaoComponent,
+    ListaDeTodosOsCursos,
+    Home,
+    ParticlesContact
   ],
   imports: [
     BrowserModule,

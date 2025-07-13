@@ -155,4 +155,18 @@
     display: block;
     margin-bottom: 40vh;
   }
+  .section-title a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color:  rgba(59, 130, 246, 0.2);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .section-title a:hover {
+    background-color: rgba(11, 66, 153, 0.2);
+  }
   
