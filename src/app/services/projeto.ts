@@ -10,8 +10,12 @@ export class Projeto {
   projeto = [
     {
       nome:"nome",
-      
+
     }
   ]
+
+  getProjeto() {
+    return this.projeto;
+  }
 
 }

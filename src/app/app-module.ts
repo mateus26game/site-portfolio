@@ -12,7 +12,7 @@ import { FormacaoComponent } from './component/formacao/formacao';
 import { ListaDeTodosOsCursos } from './component/lista-de-todos-os-cursos/lista-de-todos-os-cursos';
 import { Home } from './component/home/home';
 import { ParticlesContact } from './component/particles-contact/particles-contact';
-import { Projeto } from './component/projeto/projeto';
+import { Projetoo } from './component/projeto/projeto';
 
 
 @NgModule({
@@ -26,7 +26,7 @@ import { Projeto } from './component/projeto/projeto';
     ListaDeTodosOsCursos,
     Home,
     ParticlesContact,
-    Projeto
+    Projetoo
   ],
   imports: [
     BrowserModule,
