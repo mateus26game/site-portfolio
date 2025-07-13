@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Projeto } from '../../services/projeto';
+import { ProjetosService } from '../../services/projeto';
 
 @Component({
   selector: 'app-projeto',
@@ -11,10 +11,10 @@ export class Projetoo {
 
   projetoAny: any[] = [];
 
-  constructor(private projeto: Projeto){}
+  constructor(private projeto: ProjetosService){}
 
   ngOnInit(): void {
-    this.projetoAny = this.projeto.getProjeto(); 
+    this.projetoAny = this.projeto.getProjetos(); 
   }
 
 }

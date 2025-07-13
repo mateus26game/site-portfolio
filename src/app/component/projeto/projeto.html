@@ -1,12 +1,18 @@
 <h1 class="section-title">Lista de Projetos</h1>
+<div class="projetos-container">
+  <div class="projeto-card" *ngFor="let projeto of projetoAny">
+    <h1 class="section-titlee">{{ projeto.nome }}</h1>
+    <img [src]="projeto.imagem" [alt]="projeto.nome" />
 
+    <p>{{ projeto.texto }}</p>
 
-
-<div class="cursos-carousel" id="cursos-carousel" #cursosCarousel>
-    <div class="curso-card" *ngFor="let curso of projetoAny">
-      <a [href]="curso.link" target="_blank">
-        <img [src]="curso.imagem" [alt]="curso.titulo" class="curso-img" />
-        <h3 class="curso-titulo">{{ curso.titulo }}</h3>
-        <p class="curso-plataforma">{{ curso.plataforma }}</p>
+    <div class="projeto-links">
+      <a [href]="projeto.link_back" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a [href]="projeto.linkdoVideo" target="_blank">
+        <i class="fab fa-youtube"></i> Vídeo
       </a>
     </div>
+  </div>
+</div>

@@ -1,11 +1,90 @@
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.projeto-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.projeto-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.projeto-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #3b82f6;
+}
+
+.projeto-card p {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.projeto-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projeto-links a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.projeto-links a:hover {
+  color: #60a5fa;
+}
+
+.projeto-links i {
+  font-size: 1.2rem;
+}
+
+
 
 .section-title {
-    color: white;
-    font-size: 3rem; /* Aumentado */
-    font-weight: 900;
-    margin-bottom: 2rem;
-    font-family: 'Fira Sans', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+  color: white;
+  font-size: 3rem; /* Aumentado */
+  font-weight: 900;
+  margin-bottom: 2rem;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.section-titlee {
+  color: white;
+  font-size: 2vh; /* Aumentado */
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
