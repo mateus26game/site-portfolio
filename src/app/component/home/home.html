@@ -8,9 +8,11 @@
   <div class="hero-content">
     <h1>TRANSFORMANDO IDEIAS EM <span class="highlight">REALIDADE DIGITAL.</span></h1>
     <p>
-      Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto(a) para criar a presença online dos seus sonhos.
+      Sou desenvolvedor backend focado em crescer e entregar soluções eficientes.  
+      Encaro desafios como oportunidades para evoluir e fazer a diferença com tecnologia.
     </p>
-    <button class="btn-contact">Entre em contato</button>
+    
+    <button id="btnDownload" class="btn-contact">Baixar Currículo</button>
   </div>
 </div>
  
@@ -25,3 +27,15 @@
 <app-fale-comigo></app-fale-comigo>
 <app-particles-contact></app-particles-contact>
 <app-footer></app-footer>
+
+<script>
+  document.getElementById('btnDownload').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = '/src/assets/mateus.pdf'; // caminho do arquivo na pasta assets
+  link.download = 'Mateus_Guerra_Curriculo.pdf'; // nome do arquivo que vai baixar
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
+
+</script>
